@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  secretPassword = "tuna";
+  hasBeenClicked = false;
+
+  onClick(){
+    this.hasBeenClicked = !this.hasBeenClicked;
+  }
+
 }

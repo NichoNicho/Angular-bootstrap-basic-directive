@@ -2,7 +2,21 @@
   <div class="panel panel-info">
     <div class="panel-heading"><strong>basic directives</strong></div>
     <div class="panel-body">
-      <div class="col-md-6 col-md-push-6">{{title}}</div>
+      <div class="col-md-6 col-md-push-5">{{title}}</div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-push-5">
+      <button type="button" class="btn btn-md btn-warning" aria-label="Left Align" (click)="onClick()">
+        <strong>Display Details</strong>
+      </button>
+    </div>
+  </div>
+  <hr>
+  <div class="text-center">
+    <p *ngIf="hasBeenClicked">Bacon ipsum dolor amet ham hock spare ribs cupim bresaola,
+      pancetta ham pork t-bone sirloin drumstick kevin ribeye meatball.
+      Sirloin tail boudin shankle pastrami strip steak chuck alcatra corned beef meatloaf kevin venison. 
+      Short ribs pig strip steak bacon, ribeye cupim sausage shoulder. Swine turkey strip steak bacon.</p>
   </div>
 </div>
