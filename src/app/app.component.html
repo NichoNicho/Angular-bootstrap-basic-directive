@@ -16,7 +16,16 @@
   <div class="text-center">
     <p *ngIf="hasBeenClicked">Bacon ipsum dolor amet ham hock spare ribs cupim bresaola,
       pancetta ham pork t-bone sirloin drumstick kevin ribeye meatball.
-      Sirloin tail boudin shankle pastrami strip steak chuck alcatra corned beef meatloaf kevin venison. 
+      Sirloin tail boudin shankle pastrami strip steak chuck alcatra corned beef meatloaf kevin venison.
       Short ribs pig strip steak bacon, ribeye cupim sausage shoulder. Swine turkey strip steak bacon.</p>
+  </div>
+  <div class="text-center">
+    <div *ngFor= "let log of numberOfLogs; let i = index"
+    [ngStyle]="{backgroundColor: i >= 4 ? 'pink' : 'transparent'}"
+    [ngClass]="{'white-text': i >= 4}"
+    >
+    {{log}}
+    <hr>
+    </div>
   </div>
 </div>

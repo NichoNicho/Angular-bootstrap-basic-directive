@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
-  secretPassword = "tuna";
   hasBeenClicked = false;
+  numberOfLogs = [];
 
-  onClick(){
+  onClick() {
     this.hasBeenClicked = !this.hasBeenClicked;
+    this.numberOfLogs.push(new Date());
   }
 
 }
